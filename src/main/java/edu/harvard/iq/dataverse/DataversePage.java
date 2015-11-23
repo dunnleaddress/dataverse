@@ -762,7 +762,7 @@ public class DataversePage implements java.io.Serializable {
             try {
                 // create links (does indexing) right now (might be expensive)
                 boolean debug = false;
-                savedSearchService.makeLinksForSingleSavedSearch(savedSearchOfChildren, debug);
+                savedSearchService.makeLinksForSingleSavedSearch(dvRequestService.getDataverseRequest(), savedSearchOfChildren, debug);
                 //JsfHelper.addSuccessMessage(dataverse.getDisplayName() + " has been successfully linked to " + linkingDataverse.getDisplayName());               
                 List<String> arguments = new ArrayList();
                 arguments.add(dataverse.getDisplayName());
