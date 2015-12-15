@@ -9,7 +9,7 @@ Assumptions
 
 This guide assumes you are using a Mac but we do have pages for :doc:`/developers/windows` and :doc:`/developers/ubuntu`. New users are advised to follow the procedure in below instruction in the order for a successful dev setup.
 
-Requirements
+Requirements (make sure you install these before dev setup.)
 ------------
 
 Dataverse
@@ -86,12 +86,12 @@ NetBeans can be downloaded from http://netbeans.org. Please make sure that you u
 
 This guide will assume you are using Netbeans for development.
 
-Additional Tools
+Additional Tools (optional)
 ~~~~~~~~~~~~~~~~
 
 Please see also the :doc:`/developers/tools` page, which lists additional tools that very useful but not essential.
 
-Setting up your dev environment
+Setting up your dev environment (after requirements are met)
 -------------------------------
 
 SSH keys
