@@ -7,10 +7,15 @@ Development Environment
 Assumptions
 -----------
 
-This guide assumes you are using a Mac but we do have pages for :doc:`/developers/windows` and :doc:`/developers/ubuntu`.
+This guide assumes you are using a Mac but we do have pages for :doc:`/developers/windows` and :doc:`/developers/ubuntu`. New users are advised to follow the procedure in below instruction in the order for a successful dev setup.
 
-Requirements
+Requirements (make sure you install these before dev setup.)
 ------------
+
+Dataverse
+~~~~
+
+This instruction targets Dataverse version 4.2.1 and Mac
 
 Java
 ~~~~
@@ -18,6 +23,9 @@ Java
 Dataverse is developed on Java 7. An upgrade to Java 8 is being tracked at https://github.com/IQSS/dataverse/issues/2151
 
 The use of Oracle's version of Java is recommended, which can be downloaded from http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+Java 7 Archive download: http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+(or google : Java SE Development Kit 7 - Downloads).
 
 The version of OpenJDK available from package managers from common Linux distributions such as Ubuntu and Fedora is probably sufficient for small changes as well as day to day development.
 
@@ -28,10 +36,14 @@ As a `Java Enterprise Edition <http://en.wikipedia.org/wiki/Java_Platform,_Enter
 
 Glassfish 4.1+ is required, which can be downloaded from http://glassfish.java.net
 
+Recommend Glassfish version no more than 4.1. Glassfish comes with Netbeans, so when download Netbeans version is: https://netbeans.org/downloads/8.0.2/
+
 PostgreSQL
 ~~~~~~~~~~
 
 PostgreSQL 9.x is required and can be downloaded from http://postgresql.org
+
+Because JDBC driver for Dataverse 4.2.1 only supports PostgreSQL 9.1 hence download is http://www.enterprisedb.com/products-services-training/pgdownload#osx (Installer version Version 9.1.19) - You can install PostgreSQL with homebrew alternatively, I found it easier with enterpriseDB, you will also get pgAdmin.
 
 Solr
 ~~~~
@@ -45,10 +57,15 @@ curl
 
 A command-line tool called ``curl`` ( http://curl.haxx.se ) is required by the setup scripts and it is useful to have curl installed when working on APIs.
 
+brew
+~~~~
+
+You need brew to install jq so here is the command to install brew: (ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)") taken from source http://brew.sh/
+
 jq
 ~~
 
-A command-line tool called ``jq`` ( http://stedolan.github.io/jq/ ) is required by the setup scripts.
+A command-line tool called ``jq`` ( http://stedolan.github.io/jq/ ) is required by the setup scripts. The command is ``brew install jq`` (taken from https://stedolan.github.io/jq/download/)
 
 If you are already using ``brew``, ``apt-get``, or ``yum``, you can install ``jq`` that way. Otherwise, download the binary for your platform from http://stedolan.github.io/jq/ and make sure it is in your ``$PATH`` (``/usr/bin/jq`` is fine) and executable with ``sudo chmod +x /usr/bin/jq``.
 
@@ -69,12 +86,12 @@ NetBeans can be downloaded from http://netbeans.org. Please make sure that you u
 
 This guide will assume you are using Netbeans for development.
 
-Additional Tools
+Additional Tools (optional)
 ~~~~~~~~~~~~~~~~
 
 Please see also the :doc:`/developers/tools` page, which lists additional tools that very useful but not essential.
 
-Setting up your dev environment
+Setting up your dev environment (after requirements are met)
 -------------------------------
 
 SSH keys
