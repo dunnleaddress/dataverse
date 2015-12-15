@@ -55,7 +55,7 @@ Solr 4.6.0 is the only version that has been tested extensively and is recommend
 curl
 ~~~~
 
-A command-line tool called ``curl`` ( http://curl.haxx.se ) is required by the setup scripts and it is useful to have curl installed when working on APIs.
+A command-line tool called ``curl`` ( http://curl.haxx.se ) is required by the setup scripts and it is useful to have curl installed when working on APIs. Yosemite come with curl, so you need not install (check: curl --version).
 
 jq
 ~~
