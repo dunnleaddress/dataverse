@@ -118,7 +118,7 @@ Developers who are not part of the `development team at IQSS <http://datascience
 Cloning the Project from Netbeans
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-From NetBeans, click "Team" then "Remote" then "Clone". Under "Repository URL", enter the `"ssh clone URL" <https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-ssh>`_ for your fork (if you do not have push access to the repo under IQSS) or ``git@github.com:IQSS/dataverse.git`` (if you do have push access to the repo under IQSS). See also https://netbeans.org/kb/docs/ide/git.html#github
+From NetBeans, click "Team" then "Git" then "Clone". Under "Repository URL", enter the `"ssh clone URL" <https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-ssh>`_ for your fork (if you do not have push access to the repo under IQSS) or ``git@github.com:IQSS/dataverse.git`` (if you do have push access to the repo under IQSS). See also https://netbeans.org/kb/docs/ide/git.html#github
 
 Cloning the Project from the Terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
