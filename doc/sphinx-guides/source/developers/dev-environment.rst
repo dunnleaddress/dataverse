@@ -55,12 +55,17 @@ Solr 4.6.0 is the only version that has been tested extensively and is recommend
 curl
 ~~~~
 
-A command-line tool called ``curl`` ( http://curl.haxx.se ) is required by the setup scripts and it is useful to have curl installed when working on APIs. Yosemite come with curl, so you need not install (check: curl --version).
+A command-line tool called ``curl`` ( http://curl.haxx.se ) is required by the setup scripts and it is useful to have curl installed when working on APIs.
+
+brew
+~~~~
+
+You need brew to install jq so here is the command to install brew: (ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)") taken from source http://brew.sh/
 
 jq
 ~~
 
-A command-line tool called ``jq`` ( http://stedolan.github.io/jq/ ) is required by the setup scripts.
+A command-line tool called ``jq`` ( http://stedolan.github.io/jq/ ) is required by the setup scripts. The command is ``brew install jq`` (taken from https://stedolan.github.io/jq/download/)
 
 If you are already using ``brew``, ``apt-get``, or ``yum``, you can install ``jq`` that way. Otherwise, download the binary for your platform from http://stedolan.github.io/jq/ and make sure it is in your ``$PATH`` (``/usr/bin/jq`` is fine) and executable with ``sudo chmod +x /usr/bin/jq``.
 
