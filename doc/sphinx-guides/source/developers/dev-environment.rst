@@ -13,9 +13,15 @@ Requirements (make sure you install these before dev setup.)
 ------------
 
 Dataverse
-~~~~
+~~~~~~~~~
 
-This instruction targets Dataverse version 4.2.1 and Mac
+This instruction targets Dataverse version 4.2.1 and Mac.
+I found the combination that works -> GlassFish 4.1 comes with NB 8.0.2 - Java 7 JDK - Mac El Capitan - EnterpriseDB postsql 9.3 (comes with pgadmin nice interface) - and DataVerse 4.2.1.
+
+Technical Concept
+~~~~~~~~~~~~~~~~~
+
+Generally speaking, DataVerse is implemented as such:
 
 Java
 ~~~~
