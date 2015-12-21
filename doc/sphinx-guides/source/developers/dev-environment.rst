@@ -184,6 +184,12 @@ For a list of possible values, please "find usages" on the settings key above an
 
 Now when you go to http://localhost:8080/shib.xhtml you should be prompted to create a Shibboleth account.
 
+Make changes to source codes and test on Netbeans IDE
+-----------------------------------------------------
+
+- Rightclick on the dataverse project in Projects tab/window and select Run.
+- ...
+
 Rebuilding your dev environment
 -------------------------------
 
