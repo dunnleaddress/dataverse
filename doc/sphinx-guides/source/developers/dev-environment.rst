@@ -4,13 +4,15 @@ Development Environment
 
 .. contents:: :local:
 
+-----------
 Assumptions
 -----------
 
 This guide assumes you are using a Mac but we do have pages for :doc:`/developers/windows` and :doc:`/developers/ubuntu`. New users are advised to follow the procedure in below instruction in the order for a successful dev setup.
 
+------------------------------------------------------------
 Requirements (make sure you install these before dev setup.)
-------------
+------------------------------------------------------------
 
 Dataverse
 ~~~~~~~~~
