@@ -201,3 +201,42 @@ If you have an old copy of the database and old Solr data and want to start fres
 - confirm you are using the latest Dataverse-specific Solr schema.xml per the "Installing and Running Solr" section of this guide
 - confirm http://localhost:8080 is up
 - If you want to set some dataset-specific facets, go to the root dataverse (or any dataverse; the selections can be inherited) and click "General Information" and make choices under "Select Facets". There is a ticket to automate this: https://github.com/IQSS/dataverse/issues/619
+
+Misc:
+
+--- Uninstall Netbeans:
+~~~~~~~~~~~~~~~~~~~~~~
+
+For installations from Java EE 5 Tools Bundle
+Go to the Finder and open the Applications window. Find the NetBeans executable you want to uninstall.
+Control-click (or right-click) the executable and select "Show package contents". ...
+Double-click the uninstaller icon and follow the instructions.
+
+--- Uninstall PostgreSQL:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+To remove the EnterpriseDB One-Click install of PostgreSQL 9.1:
+
+Open a terminal window. Terminal is found in: Applications->Utilities->Terminal
+Run the uninstaller:
+
+sudo /Library/PostgreSQL/9.1/uninstall-postgresql.app/Contents/MacOS/installbuilder.sh
+If you installed with the Postgres Installer, you can do:
+
+open /Library/PostgreSQL/9.2/uninstall-postgresql.app
+It will ask for the administrator password and run the uninstaller.
+
+Remove the PostgreSQL and data folders. The Wizard will notify you that these were not removed.
+
+sudo rm -rf /Library/PostgreSQL
+Remove the ini file:
+
+sudo rm /etc/postgres-reg.ini
+Remove the PostgreSQL user using System Preferences -> Users & Groups.
+
+Unlock the settings panel by clicking on the padlock and entering your password.
+Select the PostgreSQL user and click on the minus button.
+Restore your shared memory settings:
+
+sudo rm /etc/sysctl.conf
+That should be all! The uninstall wizard would have removed all icons and start-up applications files so you don't have to worry about those.
