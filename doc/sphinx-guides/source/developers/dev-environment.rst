@@ -95,7 +95,7 @@ This guide will assume you are using Netbeans for development.
 Additional Tools (optional)
 ~~~~~~~~~~~~~~~~
 
-Please see also the :doc:`/developers/tools` page, which lists additional tools that very useful but not essential.
+Please see also the :doc:`/developers/tools` page ( or http://guides.dataverse.org/en/latest/developers/tools.html ), which lists additional tools that very useful but not essential.
 
 Setting up your dev environment (after requirements are met)
 -------------------------------
@@ -203,17 +203,18 @@ If you have an old copy of the database and old Solr data and want to start fres
 - If you want to set some dataset-specific facets, go to the root dataverse (or any dataverse; the selections can be inherited) and click "General Information" and make choices under "Select Facets". There is a ticket to automate this: https://github.com/IQSS/dataverse/issues/619
 
 Misc:
+----
 
---- Uninstall Netbeans:
-~~~~~~~~~~~~~~~~~~~~~~
+Uninstall Netbeans:
+~~~~~~~~~~~~~~~~~~~
 
 For installations from Java EE 5 Tools Bundle
 Go to the Finder and open the Applications window. Find the NetBeans executable you want to uninstall.
 Control-click (or right-click) the executable and select "Show package contents". ...
 Double-click the uninstaller icon and follow the instructions.
 
---- Uninstall PostgreSQL:
-~~~~~~~~~~~~~~~~~~~~~~~~
+Uninstall PostgreSQL:
+~~~~~~~~~~~~~~~~~~~~~
 
 To remove the EnterpriseDB One-Click install of PostgreSQL 9.1:
 
