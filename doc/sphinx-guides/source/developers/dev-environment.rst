@@ -128,6 +128,8 @@ From NetBeans, click "Team" then "Git" then "Clone". Under "Repository URL", ent
 
 I found it is easier to clone with https so enter url address for example ``https://github.com/dunnleaddress/dataverse.git`` and your user name and password. Then select Master and 4.2.1 branches - the one you are interested in.
 
+AND DO NOT CHANGE CLONE NAME "dataverse" that the name the install script will assume to use.
+
 Cloning the Project from the Terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
