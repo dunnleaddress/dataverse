@@ -21,7 +21,9 @@ I found the combination that works -> GlassFish 4.1 comes with NB 8.0.2 - Java 7
 Project Architecture
 ~~~~~~~~~~~~~~~~~~~~
 
-Generally speaking, DataVerse is implemented including: Webapplication dataverse.war, PosgreSQL, and Solr for searching.
+Generally speaking, DataVerse's architecture implementation including: Jave web-application dataverse.war deployed on Glassfish, PosgreSQL, and Solr for searching. The installation script will configure all the project components and connect them providing you supply the correct setup information and RESPECT the assumptions in this instruction.
+
+How these components are connected under the hook i don't know :( yet. If you read the install script it will tell.
 
 "@pdurbin I really want to describe the all parts of the project connected and communicate to each other but i do not dare to do this, can you please briefly explain it here? Thanks!"
 
@@ -166,6 +168,8 @@ Once some dataverses, datasets, and files have been created and indexed, you can
 
 Run installer
 ~~~~~~~~~~~~~
+
+"@pdurbin, I think we should also mention how the script help configure solr search in here? Thanks!"
 
 Once you install Glassfish and PostgreSQL, you need to configure the environment for the Dataverse app - configure the database connection, set some options, etc. We have a new installer script that should do it all for you. Again, assuming that the clone on the Dataverse repository was retrieved using NetBeans and that it is saved in the path ~/NetBeansProjects:
 
