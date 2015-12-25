@@ -171,6 +171,8 @@ Before running installer
 
 There is one more thing you must do before running the installer step below. in Netbeans IDE rightclick project namely "dataverse" under project tab, select build and Maven will run and build the project code. Maven is configured in project codes to garthers together all information and dependencies to build a war file (web application) and you should see the newly created war file such as "/Users/dung/NetBeansProjects/dataverse/target/dataverse-4.2.1.war". I hope you will get green "Build Success" message. The set up script will look for the build or war file in this NB IDE, hence we need this step.
 
+And making sure you have a valid smtp server address such as smtp.yahoo.com (@pdurbin, can we make this optional - leave empty?)
+
 Run installer
 ~~~~~~~~~~~~~
 
