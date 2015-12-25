@@ -166,6 +166,11 @@ Once Solr is up and running you should be able to see a "Solr Admin" dashboard a
 
 Once some dataverses, datasets, and files have been created and indexed, you can experiment with searches directly from Solr at http://localhost:8983/solr/#/collection1/query and look at the JSON output of searches, such as this wildcard search: http://localhost:8983/solr/collection1/select?q=*%3A*&wt=json&indent=true . You can also get JSON output of static fields Solr knows about: http://localhost:8983/solr/schema/fields
 
+Before running installer
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is one more thing you must do before running the installer step below. in Netbeans IDE rightclick project under project tab, select build and Maven will run and build the project code. Maven is configured in project codes to garthers together all information and dependencies to build a war file (web application) and deploys war file to Glassfish server. I hope you will get green "Build Success" message. The set up script will look for the build or war file in this NB IDE, hence we need this step.
+
 Run installer
 ~~~~~~~~~~~~~
 
