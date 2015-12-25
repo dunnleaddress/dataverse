@@ -169,7 +169,7 @@ Once some dataverses, datasets, and files have been created and indexed, you can
 Before running installer
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-There is one more thing you must do before running the installer step below. in Netbeans IDE rightclick project under project tab, select build and Maven will run and build the project code. Maven is configured in project codes to garthers together all information and dependencies to build a war file (web application) and deploys war file to Glassfish server. I hope you will get green "Build Success" message. The set up script will look for the build or war file in this NB IDE, hence we need this step.
+There is one more thing you must do before running the installer step below. in Netbeans IDE rightclick project namely "dataverse" under project tab, select build and Maven will run and build the project code. Maven is configured in project codes to garthers together all information and dependencies to build a war file (web application) and deploys war file to Glassfish server. I hope you will get green "Build Success" message. The set up script will look for the build or war file in this NB IDE, hence we need this step.
 
 Run installer
 ~~~~~~~~~~~~~
