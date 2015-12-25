@@ -23,6 +23,8 @@ Project Architecture
 
 Generally speaking, DataVerse is implemented including: Webapplication dataverse.war, PosgreSQL, and Solr for searching.
 
+"@pdurbin I really want to describe the all parts of the project connected and communicate to each other but i do not dare to do this, can you please briefly explain it here? Thanks!"
+
 Java
 ~~~~
 
