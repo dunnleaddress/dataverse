@@ -21,7 +21,11 @@ I found the combination that works -> GlassFish 4.1 comes with NB 8.0.2 - Java 7
 Project Architecture
 ~~~~~~~~~~~~~~~~~~~~
 
-Generally speaking, DataVerse is implemented including: Webapplication dataverse.war, PosgreSQL, and Solr for searching.
+Generally speaking, DataVerse's architecture implementation including: Jave web-application dataverse.war deployed on Glassfish, PosgreSQL, and Solr for searching. The installation script will configure all the project components and connect them providing you supply the correct setup information and RESPECT the assumptions in this instruction.
+
+How these components are connected under the hook i don't know :( yet. If you read the install script it will tell.
+
+"@pdurbin I really want to describe the all parts of the project connected and communicate to each other but i do not dare to do this, can you please briefly explain it here? Thanks!"
 
 Java
 ~~~~
@@ -162,8 +166,17 @@ Once Solr is up and running you should be able to see a "Solr Admin" dashboard a
 
 Once some dataverses, datasets, and files have been created and indexed, you can experiment with searches directly from Solr at http://localhost:8983/solr/#/collection1/query and look at the JSON output of searches, such as this wildcard search: http://localhost:8983/solr/collection1/select?q=*%3A*&wt=json&indent=true . You can also get JSON output of static fields Solr knows about: http://localhost:8983/solr/schema/fields
 
+Before running installer
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is one more thing you must do before running the installer step below. in Netbeans IDE rightclick project namely "dataverse" under project tab, select build and Maven will run and build the project code. Maven is configured in project codes to garthers together all information and dependencies to build a war file (web application) and you should see the newly created war file such as "/Users/dung/NetBeansProjects/dataverse/target/dataverse-4.2.1.war". I hope you will get green "Build Success" message. The set up script will look for the build or war file in this NB IDE, hence we need this step.
+
+And making sure you have a valid smtp server address such as smtp.yahoo.com (@pdurbin, can we make this optional - leave empty?)
+
 Run installer
 ~~~~~~~~~~~~~
+
+"@pdurbin, I think we should also mention how the script helps configuring solr search with other components in here? Thanks!"
 
 Once you install Glassfish and PostgreSQL, you need to configure the environment for the Dataverse app - configure the database connection, set some options, etc. We have a new installer script that should do it all for you. Again, assuming that the clone on the Dataverse repository was retrieved using NetBeans and that it is saved in the path ~/NetBeansProjects:
 
