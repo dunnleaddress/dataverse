@@ -176,7 +176,7 @@ And making sure you have a valid smtp server address such as smtp.yahoo.com (@pd
 Run installer
 ~~~~~~~~~~~~~
 
-"@pdurbin, I think we should also mention how the script help configure solr search in here? Thanks!"
+"@pdurbin, I think we should also mention how the script helps configuring solr search with other components in here? Thanks!"
 
 Once you install Glassfish and PostgreSQL, you need to configure the environment for the Dataverse app - configure the database connection, set some options, etc. We have a new installer script that should do it all for you. Again, assuming that the clone on the Dataverse repository was retrieved using NetBeans and that it is saved in the path ~/NetBeansProjects:
 
