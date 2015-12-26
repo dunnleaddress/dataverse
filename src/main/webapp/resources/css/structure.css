@@ -177,7 +177,7 @@ span.glyphicon[data-toggle='tooltip'] {cursor: default;}
 }
 
 /* -------- HEADER -------- */
-#dataverse-header-block {padding-top:50px;}
+/* dungle #dataverse-header-block {padding-top:50px;} */
 #dataverseHeader {margin:0 auto;}
 #dataverseHeader .dataverseHeaderBlock {display:table-row;}
 #dataverseHeader .dataverseHeaderCell {display:table-cell;}

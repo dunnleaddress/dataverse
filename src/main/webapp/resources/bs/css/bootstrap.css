@@ -267,8 +267,8 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('#{resource["bs/fonts/glyphicons-halflings-regular.eot"]}');
-  src: url('#{resource["bs/fonts/glyphicons-halflings-regular.eot"]}?#iefix') format('embedded-opentype'), url('#{resource["bs/fonts/glyphicons-halflings-regular.woff2"]}') format('woff2'), url('#{resource["bs/fonts/glyphicons-halflings-regular.woff"]}') format('woff'), url('#{resource["bs/fonts/glyphicons-halflings-regular.ttf"]}') format('truetype'), url('#{resource["bs/fonts/glyphicons-halflings-regular.svg"]}#glyphicons_halflingsregular') format('svg');
+  src: url('/dataverse/javax.faces.resource/bs/fonts/glyphicons-halflings-regular.eot.xhtml');
+  src: url('/dataverse/javax.faces.resource/bs/fonts/glyphicons-halflings-regular.eot.xhtml?#iefix') format('embedded-opentype'), url('/dataverse/javax.faces.resource/bs/fonts/glyphicons-halflings-regular.woff2.xhtml') format('woff2'), url('/dataverse/javax.faces.resource/bs/fonts/glyphicons-halflings-regular.woff.xhtml') format('woff'), url('/dataverse/javax.faces.resource/bs/fonts/glyphicons-halflings-regular.ttf.xhtml') format('truetype'), url('/dataverse/javax.faces.resource/bs/fonts/glyphicons-halflings-regular.svg.xhtml#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -2540,10 +2540,10 @@ output {
   border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -4137,7 +4137,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
+  /* position: fixed; dungle */
+  position: auto;
   right: 0;
   left: 0;
   z-index: 1030;
