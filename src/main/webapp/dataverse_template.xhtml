@@ -30,6 +30,9 @@
    </h:head>
 
     <h:body>
+        
+        <!-- dungle ucpage star -->
+        <div class="uc-page uc-980 uofc_b uc-level-1 uc-no-aside">
       
         <f:loadBundle basename="Bundle" var="bundle"/>
         <a href="#content" class="sr-only">#{bundle['body.skip']}</a>
@@ -45,6 +48,9 @@
         <div class="container" id="content"> dungle template container content
             <ui:insert name="body">Default Body</ui:insert>
         </div>
+        
+        <!-- dungle removed the original footer
+        
         <div class="container" id="footer"> dungle footer goes here container footer .
             <div class="row">
                 <div class="col-sm-8 small">
@@ -63,74 +69,78 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+        
+        dungle end -->
+        
             <!-- UofC footer dungle template from the library.ucalgary.ca -->
 
             <div class="uc-section uc-superfooter" id="uc-footer">
                 <div class="wrapper">
+                    <!-- start wrapper -->
                     <div id="uc-footer-info">
                         <div style="margin-top: -22px;" class="block">
-                            <p><b>Libraries &amp; Cultural Resources</b><br/>
-                            </p><div style="height: 3px;"><h:outputText value="&#160;" /></div>
+                            <p><b>Libraries &amp; Cultural Resources</b><br/></p>
+                            <div style="height: 3px;"><h:outputText value="&#160;" /></div>
                             University of Calgary<br/>
-                                410 University Court NW<br/>
-                                    Calgary, Alberta, Canada<br/>
-                                        T2N 1N4
-                                        <p></p>                                     
-                                            Copyright <h:outputText value="\u00a9" /></div> 2015       	  <br/>
-                                                <a href="http://www.ucalgary.ca/policies/files/policies/Privacy Policy_0.pdf" target="_blank">Privacy Policy</a>
-                                        <p></p>
-                                        </div>
-                                        </div>
-                                        <div id="uc-footer-links">
-                                            <div class="block">
-                                                <h2>Library Quicklinks</h2>
-                                                <ul>
-                                                    <li aria-haspopup="false"><a href="http://library.ucalgary.ca/services/borrowing/request">Interlibrary Loan</a></li>
-                                                    <li aria-haspopup="false"><a href="http://workrooms.ucalgary.ca">Book a workroom</a></li>
-                                                    <li aria-haspopup="false"><a href="http://sirsi1.lib.ucalgary.ca/uhtbin/cgisirsi/0/UCALGARY/0/38/2/X/BLASTOFF">Classic Catalogue</a></li>
-                                                    <li aria-haspopup="false"><a href="http://library.ucalgary.ca/send-my-pin">Forgot Password</a></li>
-                                                    <li aria-haspopup="false"><a href="http://library.ucalgary.ca/copyright">Copyright at UofC</a></li>
-                                                    <li aria-haspopup="false"><a href="http://library.ucalgary.ca/website-feedback">Database Access Problems</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="block">
-                                                <h2>Academics</h2>
-                                                <ul>
-                                                    <li aria-haspopup="false"><a href="http://contacts.ucalgary.ca/directory/departments">Departments &amp; Programs</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.ucalgary.ca/admissions/">Undergraduate Studies</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.grad.ucalgary.ca/">Graduate Studies</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.ucalgary.ca/international/">International Studies</a></li>
-                                                    <li aria-haspopup="false"><a href="http://conted.ucalgary.ca/">Continuing Studies</a></li>
-                                                    <li aria-haspopup="false"><a href="http://library.ucalgary.ca/">Libraries at the University</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="block">
-                                                <h2>Campus Life</h2>
-                                                <ul>
-                                                    <li aria-haspopup="false"><a href="http://www.godinos.com/" target="_blank">Go Dinos!</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.ucalgary.ca/residence/">Residence</a></li>
-                                                    <li aria-haspopup="false"><a href="http://gsa.ucalgary.ca/">Graduate Students' Association</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.ucalgaryrecreation.ca/" target="_blank">Athletics &amp; Recreation</a></li>
-                                                    <li aria-haspopup="false"><a href="http://calgarybookstore.ca/" target="_blank">Bookstore</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.su.ucalgary.ca/">Students' Union</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="block">
-                                                <h2>Media &amp; Publications</h2>
-                                                <ul>
-                                                    <li aria-haspopup="false"><a href="http://ucalgary.ca/news/">News</a></li>
-                                                    <li aria-haspopup="false"><a href="http://ucalgary.ca/mediacentre">Media Centre</a></li>
-                                                    <li aria-haspopup="false"><a href="http://ucalgary.ca/utoday">U Today</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.ucalgary.ca/currentstudents/uthisweek">U This Week</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.umag.ca/" target="_blank">U Magazine</a></li>
-                                                    <li aria-haspopup="false"><a href="http://www.ucalgary.ca/pubs/calendar/">University Calendar</a></li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        </div>
-                                        </div>
+                            410 University Court NW<br/>
+                            Calgary, Alberta, Canada<br/>
+                            T2N 1N4
+                            <p>Copyright <h:outputText value="\u00a9" />2015<br/>
+                            <a href="http://www.ucalgary.ca/policies/files/policies/Privacy Policy_0.pdf" target="_blank">Privacy Policy</a>
+                            </p>
+                        </div> 
+                    </div>
+                
+                    <div id="uc-footer-links">
+                        <div class="block">
+                            <h2>Library Quicklinks</h2>
+                            <ul>
+                                <li aria-haspopup="false"><a href="http://library.ucalgary.ca/services/borrowing/request">Interlibrary Loan</a></li>
+                                <li aria-haspopup="false"><a href="http://workrooms.ucalgary.ca">Book a workroom</a></li>
+                                <li aria-haspopup="false"><a href="http://sirsi1.lib.ucalgary.ca/uhtbin/cgisirsi/0/UCALGARY/0/38/2/X/BLASTOFF">Classic Catalogue</a></li>
+                                <li aria-haspopup="false"><a href="http://library.ucalgary.ca/send-my-pin">Forgot Password</a></li>
+                                <li aria-haspopup="false"><a href="http://library.ucalgary.ca/copyright">Copyright at UofC</a></li>
+                                <li aria-haspopup="false"><a href="http://library.ucalgary.ca/website-feedback">Database Access Problems</a></li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <h2>Academics</h2>
+                            <ul>
+                                <li aria-haspopup="false"><a href="http://contacts.ucalgary.ca/directory/departments">Departments &amp; Programs</a></li>
+                                <li aria-haspopup="false"><a href="http://www.ucalgary.ca/admissions/">Undergraduate Studies</a></li>
+                                <li aria-haspopup="false"><a href="http://www.grad.ucalgary.ca/">Graduate Studies</a></li>
+                                <li aria-haspopup="false"><a href="http://www.ucalgary.ca/international/">International Studies</a></li>
+                                <li aria-haspopup="false"><a href="http://conted.ucalgary.ca/">Continuing Studies</a></li>
+                                <li aria-haspopup="false"><a href="http://library.ucalgary.ca/">Libraries at the University</a></li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <h2>Campus Life</h2>
+                            <ul>
+                                <li aria-haspopup="false"><a href="http://www.godinos.com/" target="_blank">Go Dinos!</a></li>
+                                <li aria-haspopup="false"><a href="http://www.ucalgary.ca/residence/">Residence</a></li>
+                                <li aria-haspopup="false"><a href="http://gsa.ucalgary.ca/">Graduate Students' Association</a></li>
+                                <li aria-haspopup="false"><a href="http://www.ucalgaryrecreation.ca/" target="_blank">Athletics &amp; Recreation</a></li>
+                                <li aria-haspopup="false"><a href="http://calgarybookstore.ca/" target="_blank">Bookstore</a></li>
+                                <li aria-haspopup="false"><a href="http://www.su.ucalgary.ca/">Students' Union</a></li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <h2>Media &amp; Publications</h2>
+                            <ul>
+                                <li aria-haspopup="false"><a href="http://ucalgary.ca/news/">News</a></li>
+                                <li aria-haspopup="false"><a href="http://ucalgary.ca/mediacentre">Media Centre</a></li>
+                                <li aria-haspopup="false"><a href="http://ucalgary.ca/utoday">U Today</a></li>
+                                <li aria-haspopup="false"><a href="http://www.ucalgary.ca/currentstudents/uthisweek">U This Week</a></li>
+                                <li aria-haspopup="false"><a href="http://www.umag.ca/" target="_blank">U Magazine</a></li>
+                                <li aria-haspopup="false"><a href="http://www.ucalgary.ca/pubs/calendar/">University Calendar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end wrapper -->
+                </div>
+        </div>
 
                                         <!-- UofC footer dungle template from the library.ucalgary.ca /-->
 
@@ -208,7 +218,9 @@
                 });
             }
         </script>
-        <ui:include src="google-analytics-snippet.xhtml"></ui:include>                         
+        <ui:include src="google-analytics-snippet.xhtml"></ui:include>
+        
+        </div><!-- dungle end ucpage -->
 
     </h:body>
 </html>
