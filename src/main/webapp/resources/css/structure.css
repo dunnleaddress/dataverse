@@ -699,3 +699,9 @@ button.btn-default.ui-button-text-only .ui-button-text {padding:0; font-size:14p
 .container {
     width: auto;
 }
+input, button, select, textarea {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: initial;
+}
