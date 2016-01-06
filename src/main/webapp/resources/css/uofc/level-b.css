@@ -74,7 +74,7 @@ div.uc-page.overlays:last-child:after{content:" ";position:absolute;top:0;bottom
 #uc-header ul.access{display:none}
 #uc-header div.access{display:none}
 #uc-header li{float:left}
-#uc-header li:before{content:"â€¢";padding:0 .4em}
+#uc-header li:before{content:"â€¢";padding:0 0.4em}
 #uc-header li:first-child:before{content:"";padding:0}
 #uc-header a{text-decoration:none}
 #uc-header a{color:inherit}
