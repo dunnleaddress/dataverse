@@ -154,8 +154,9 @@ Installing and Running Solr
 
 A Dataverse-specific ``schema.xml`` configuration file (described below) is required.
 
-Download solr-4.6.0.tgz from http://archive.apache.org/dist/lucene/solr/4.6.0/solr-4.6.0.tgz to any directory you like but in the example below, we have downloaded the tarball to a directory called "solr" in our home directory. For now we are using the "example" template but we are replacing ``schema.xml`` with our own. We will also assume that the clone on the Dataverse repository was retrieved using NetBeans and that it is saved in the path ~/NetBeansProjects.
+Download solr-4.6.0.tgz from http://archive.apache.org/dist/lucene/solr/4.6.0/solr-4.6.0.tgz to any directory you like but in the example below, we have downloaded the tarball to a directory called "solr" in our home directory. For now we are using the "example" template and we are replacing solr original ``schema.xml`` with our own. We will also assume that the clone on the Dataverse repository was retrieved using NetBeans and that it is saved in the path ~/NetBeansProjects.
 
+- ``cp ~/Downloads/solr-4.6.0.tgz ~/solr/``
 - ``cd ~/solr``
 - ``tar xvfz solr-4.6.0.tgz``
 - ``cd solr-4.6.0/example``
@@ -175,7 +176,7 @@ There is one more thing you must do before running the installer step below. in 
 
 Also, (it is important) right-click on dataverse project in NB ide select properties in "Run" under "Build" section make sure the "Context Path" field is empty so it is matching with the installer script. The installer script assumes the webapp is in the root directory of the webserver and not a subdirectory such as http://localhost:8080/mysubdir/. It should just be http://localhost:8080/ as indicated at the end of a successful script installation in the next step.
 
-And making sure you have a valid smtp server address such as smtp.yahoo.com (@pdurbin, can we make this optional - leave empty?)
+And making sure you have a valid smtp server address such as smtp.yahoo.com (@pdurbin, can we make this optional - leave empty? Right now install script will fail without a valid smtp server)
 
 Run installer
 ~~~~~~~~~~~~~
