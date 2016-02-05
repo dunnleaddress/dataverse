@@ -27,6 +27,8 @@ How these components are connected under the hook i don't know :( yet ask @pdurb
 
 "@pdurbin I really want to describe the all parts of the project connected and communicate to each other but i can not do this, can you please briefly explain it here? Thanks!"
 
+When download and install softwares use default settings unless specified.
+
 Java
 ~~~~
 
@@ -44,16 +46,16 @@ Glassfish
 
 As a `Java Enterprise Edition <http://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition>`_ 7 (Java EE 7) application, Dataverse requires an applications server to run.
 
-Glassfish 4.1+ is required, which can be downloaded from http://glassfish.java.net
+Glassfish 4.1+ is required, which can be downloaded from http://glassfish.java.net (No need if you use Netbeans)
 
-Recommend Glassfish version no more than 4.1. Glassfish comes with Netbeans, so when download Netbeans version is: https://netbeans.org/downloads/8.0.2/
+Recommend Glassfish version no more than 4.1. And this Glassfish comes with Netbeans, so when download Netbeans version is: https://netbeans.org/downloads/8.0.2/
 
 PostgreSQL
 ~~~~~~~~~~
 
 PostgreSQL 9.x is required and can be downloaded from http://postgresql.org
 
-Because JDBC driver for Dataverse 4.2.1 only supports PostgreSQL 9.1 hence download is http://www.enterprisedb.com/products-services-training/pgdownload#osx (Installer version Version 9.1.19) - You can install PostgreSQL with homebrew alternatively, I found it easier with enterpriseDB, you will also get pgAdmin.
+Because JDBC driver for Dataverse 4.2.1 only supports PostgreSQL 9.1 hence download is http://www.enterprisedb.com/products-services-training/pgdownload#osx (Installer version Version 9.1.19) - You can install PostgreSQL with homebrew alternatively, I found it easier with enterpriseDB, you will also get pgAdmin in enterpriseDB.
 
 Solr
 ~~~~
