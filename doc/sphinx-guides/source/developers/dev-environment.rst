@@ -187,6 +187,8 @@ Once you install Glassfish and PostgreSQL, you need to configure the environment
 
 ``cd ~/NetBeansProjects/dataverse/scripts/installer``
 
+You must be logged in as root to run the installer, or sudo.
+
 ``./install``
 
 The script will prompt you for some configuration values. It is recommended that you choose "localhost" for your hostname if this is a development environment. For everything else it should be safe to accept the defaults.
