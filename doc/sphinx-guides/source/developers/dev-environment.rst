@@ -209,7 +209,7 @@ Make changes to source codes and test on Netbeans IDE
 - Rightclick on the dataverse project in Projects tab/window and select Run.
 - ...
 
-Rebuilding your dev environment
+Rebuilding your dev environment:
 -------------------------------
 
 If you have an old copy of the database and old Solr data and want to start fresh, here are the recommended steps: 
@@ -220,6 +220,11 @@ If you have an old copy of the database and old Solr data and want to start fres
 - confirm you are using the latest Dataverse-specific Solr schema.xml per the "Installing and Running Solr" section of this guide
 - confirm http://localhost:8080 is up
 - If you want to set some dataset-specific facets, go to the root dataverse (or any dataverse; the selections can be inherited) and click "General Information" and make choices under "Select Facets". There is a ticket to automate this: https://github.com/IQSS/dataverse/issues/619
+
+Production Deployment:
+---------------------
+
+@pdurbin can we deploy this on tomcat?
 
 Misc:
 ----
