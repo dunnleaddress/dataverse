@@ -25,7 +25,7 @@ Generally speaking, DataVerse's architecture implementation including: Jave web-
 
 How these components are connected under the hook i don't know :( yet ask @pdurbin . If you read the install script it will tell.
 
-"@pdurbin I really want to describe the all parts of the project connected and communicate to each other but i do not dare to do this, can you please briefly explain it here? Thanks!"
+"@pdurbin I really want to describe the all parts of the project connected and communicate to each other but i can not do this, can you please briefly explain it here? Thanks!"
 
 Java
 ~~~~
