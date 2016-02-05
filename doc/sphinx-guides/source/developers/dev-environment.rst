@@ -53,7 +53,7 @@ Recommend Glassfish version no more than 4.1. And this Glassfish comes with Netb
 PostgreSQL
 ~~~~~~~~~~
 
-Note: dataverse uses default postgres username is postgres and password is secret. If you installed with different username/password you need to remember them.
+Note: dataverse uses default postgres username is 'postgres' and password is 'secret'. If you installed with different username/password you need to remember them.
 
 PostgreSQL 9.x is required and can be downloaded from http://postgresql.org
 
