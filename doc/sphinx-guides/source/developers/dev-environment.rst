@@ -35,7 +35,7 @@ Dataverse is developed on Java 7. An upgrade to Java 8 is being tracked at https
 The use of Oracle's version of Java is recommended, which can be downloaded from http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 Java 7 Archive download: http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
-(or google : Java SE Development Kit 7 - Downloads).
+(or google : Java SE Development Kit 7 - Downloading this 'Mac OS X x64	196.89 MB  	jdk-7u79-macosx-x64.dmg').
 
 The version of OpenJDK available from package managers from common Linux distributions such as Ubuntu and Fedora is probably sufficient for small changes as well as day to day development.
 
