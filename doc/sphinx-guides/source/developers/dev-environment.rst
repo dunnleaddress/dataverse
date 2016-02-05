@@ -103,7 +103,7 @@ Additional Tools (optional)
 
 Please see also the :doc:`/developers/tools` page ( or http://guides.dataverse.org/en/latest/developers/tools.html ), which lists additional tools that very useful but not essential.
 
-Setting up your dev environment (after requirements are met)
+Setting up your dev environment (after downloading and installing requirements are met)
 -------------------------------
 
 SSH keys
