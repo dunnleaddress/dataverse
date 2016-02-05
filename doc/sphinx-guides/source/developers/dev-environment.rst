@@ -62,7 +62,7 @@ Solr
 
 Dataverse depends on `Solr <http://lucene.apache.org/solr/>`_ for browsing and search.
 
-Solr 4.6.0 is the only version that has been tested extensively and is recommended in development. Download and configuration instructions can be found below. An upgrade to newer versions of Solr is being tracked at https://github.com/IQSS/dataverse/issues/456
+Solr 4.6.0 is the only version that has been tested extensively and is recommended in development. Download and configuration instructions can be found below (it comes with dataverse project). An upgrade to newer versions of Solr is being tracked at https://github.com/IQSS/dataverse/issues/456
 
 curl
 ~~~~
