@@ -199,6 +199,8 @@ The script is a variation of the old installer from DVN 3.x that calls another s
 
 All the future changes to the configuration that are Glassfish-specific and can be done through ``asadmin`` should now go into ``scripts/install/glassfish-setup.sh``.
 
+If your installation experiencing issues or being unsuccesful, it probably help by reading the suggestion message at the end of the execution or it may help to read this page http://guides.dataverse.org/en/2884-install-guide-reorg/installation/installation-main.html to understand more of dataverse components.
+
 Shibboleth
 ----------
 
