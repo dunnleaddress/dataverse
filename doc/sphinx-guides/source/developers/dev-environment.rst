@@ -23,9 +23,9 @@ Project Architecture
 
 Generally speaking, DataVerse's architecture implementation including: Jave web-application dataverse.war deployed on Glassfish, PosgreSQL, and Solr for searching. The installation script will configure all the project components and connect them providing you supply the correct setup information and RESPECT the assumptions in this instruction.
 
-How these components are connected under the hook i don't know :( yet ask @pdurbin . If you read the install script it will tell.
+How these components are connected under the hook i don't know :( yet ask @pdurbin . If you read the install script it will give you some ideas http://guides.dataverse.org/en/2884-install-guide-reorg/installation/installation-main.html
 
-"@pdurbin I really want to describe the all parts of the project connected and communicate to each other but i can not do this, can you please briefly explain it here? Thanks!"
+"@pdurbin I really want to describe the all parts of the project how they are connected and communicate to each other but i can not do this, can you please briefly explain it here? Thanks!"
 
 When download and install softwares use default settings unless specified.
 
