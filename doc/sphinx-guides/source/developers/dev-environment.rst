@@ -214,8 +214,14 @@ Now when you go to http://localhost:8080/shib.xhtml you should be prompted to cr
 
 Make changes to source codes and test on Netbeans IDE
 -----------------------------------------------------
+IMPORTANT: Because the installer script was to run with root account, it creates "/Applications/NetBeans/glassfish-4.1/glassfish/domains/domain1" with root owner and admin group. You will need to "chown -R [dungle]:admin domain1" so that Glassfish can write to sub directories. If not you will get permission errors. 
 
-- Rightclick on the dataverse project in Projects tab/window and select Run.
+- It is helpful to install NetBeans Connector extension for your chrome browser for testing (https://chrome.google.com/webstore/detail/netbeans-connector/hafdlehgocfcodbgjnpecfajgkeejnaa?hl=en).
+- After installing Netbeans Connector extension, Rightclick on the dataverse project in Netbeans' Projects tab and select Property. Then select Run/Browser Chrome with Netbeans Connector. This will autoload the page after your run command on Netbeans. Check Display Browser on Run / Copy Static Resources on Save / Deploy on Save so it will auto load pages for you. 
+- In Netbeans under Services/Servers stop Glassfish so that it is ready to accept a new war deployment. With this service Glassfish will auto unload your war files for you.
+- Rightclick on the dataverse project in Netbeans' Projects tab and select Run.
+- take a look at all tabs under Output tab in Netbeans IDE to observe successful run or error messages (Read error carefully if any to resolve problems).
+- That is it for now you should have a running test for new codes.
 - ...
 
 Rebuilding your dev environment:
